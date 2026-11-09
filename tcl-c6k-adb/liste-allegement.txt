@@ -1,0 +1,36 @@
+# Paquets à désactiver (pm disable-user --user 0). Un paquet par ligne.
+# Tout ce qui suit '#' est ignoré : retirez le '#' devant une ligne pour l'activer.
+# Un paquet absent du téléviseur est simplement ignoré.
+# Les paquets protégés par optimiser-tv.sh sont ignorés même s'ils figurent ici.
+#
+# Abréviations des sources (détail dans README.md) :
+#   CY = cleanyourtv.site   DT = debloattv.com   GI = gist llaumgui (65C7K)   RC = rcland12/debloat-tv
+
+# --- Actif par défaut : retenu par au moins trois sources, sans contre-indication publiée ---
+
+com.tcl.esticker               # démonstration magasin                     CY DT RC
+com.tcl.exhibit                # démonstration magasin                     DT GI RC CY
+com.tcl.hotelmenu              # mode hôtel                                DT RC CY
+com.tcl.ocean.instructions     # manuel électronique                       DT GI RC CY
+com.tcl.repairguide            # guide de réparation                       DT RC CY
+com.tcl.logkit                 # collecte et envoi de journaux             DT RC CY
+com.tcl.messagebox             # messages promotionnels TCL                CY DT RC
+com.tcl.tv.tclhome_passive     # tuile promotionnelle de l'accueil         CY DT GI RC
+com.tcl.usercenter             # compte TCL (inutile sans compte TCL)      CY DT GI RC
+com.google.android.feedback    # envoi de rapports à Google                CY DT RC
+
+# --- Optionnel : selon votre usage. Retirez le '#' pour l'activer. ---
+
+#com.tcl.partnercustomizer     # rangées TCL sur l'accueil Google TV       CY GI RC (DT : effet de bord)
+#com.tcl.channelplus           # chaînes TCL Live ; les retire de Live TV  DT RC CY
+#com.tcl.smartalexa            # Alexa ; à garder si vous l'utilisez       GI RC CY
+#com.tcl.magiconnectfree       # T-Cast, recopie d'écran du téléphone      GI CY
+#com.tcl.ui_mediaCenter        # lecteur de fichiers USB                   CY GI (DT : effet de bord)
+#com.tcl.gallery               # photos USB et économiseur d'écran TCL     GI CY
+#com.tcl.interactive           # service TCL TIAS                          DT CY
+#com.tcl.guard                 # suivi d'usage / nettoyeur mémoire         DT GI CY (RC le garde)
+#android.autoinstalls.config.google.gtvpai   # installations automatiques de partenaires   DT CY
+#tv.samba.ssm.ui               # Samba TV (reconnaissance de contenu publicitaire)   RC
+#com.google.android.play.games # Google Play Jeux                          CY DT RC
+#com.google.android.youtube.tvmusic   # YouTube Music                      CY DT RC
+#com.tcl.gamebar               # barre de jeu (VRR, fréquence) : NE PAS désactiver si vous jouez   DT CY
